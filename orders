@@ -1,0 +1,7 @@
+CREATE TABLE Orders (
+    order_id INTEGER PRIMARY KEY,
+    customer_id INTEGER NOT NULL,
+    order_date DATE ,
+    total_amount REAL CHECK (total_amount > 0),
+    Remarks_if_any varchar(200) DEFAULT 'No Remarks'
+);
