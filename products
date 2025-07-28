@@ -5,3 +5,16 @@ CREATE TABLE Products (
     price REAL NOT NULL CHECK (price > 0),
     stock_quantity INTEGER CHECK (stock_quantity >= 0)
 );
+
+INSERT INTO Products (product_id, name, category, price, stock_quantity) 
+VALUES
+(101, 'Apple iPhone 15', 'Electronics', 999.99, 10),
+(102, 'Samsung Galaxy S23', 'Electronics', 899.99, 15),
+(103, 'Leather Jacket', 'Clothing', 149.99, 25),
+(104, 'HP Laptop', 'Electronics', 799.99, 8),
+(105, 'Wooden Dining Table', 'Furniture', 499.99, 5),
+(106, 'Nike Running Shoes', 'Clothing', 129.99, 20),
+(107, 'LED TV 55"', 'Electronics', 699.99, 12),
+(108, 'Rice 10kg', 'Grocery', 25.99, 50),
+(109, 'Sofa Set (3+1+1)', 'Furniture', 999.99, 4),
+(110, 'Organic Honey 500ml', 'Grocery', 15.99, 30);
